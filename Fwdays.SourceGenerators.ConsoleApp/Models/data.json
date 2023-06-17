@@ -1,0 +1,194 @@
+﻿[
+  {
+    "Name": "User",
+    "Properties": [
+      {"Name": "Id", "Type": "int", "Nullable": false},
+      {"Name": "UserName", "Type": "string", "Nullable": true},
+      {"Name": "Email", "Type": "string", "Nullable": true}
+    ]
+  },
+  {
+    "Name": "Address",
+    "Properties": [
+      {"Name": "Id", "Type": "int", "Nullable": false},
+      {"Name": "Street", "Type": "string", "Nullable": true},
+      {"Name": "City", "Type": "string", "Nullable": true},
+      {"Name": "State", "Type": "string", "Nullable": true},
+      {"Name": "Country", "Type": "string", "Nullable": true},
+      {"Name": "ZipCode", "Type": "string", "Nullable": true}
+    ]
+  },
+  {
+    "Name": "Product",
+    "Properties": [
+      {"Name": "Id", "Type": "int", "Nullable": false},
+      {"Name": "Name", "Type": "string", "Nullable": true},
+      {"Name": "Description", "Type": "string", "Nullable": true},
+      {"Name": "Price", "Type": "double", "Nullable": false}
+    ]
+  },
+  {
+    "Name": "Order",
+    "Properties": [
+      {"Name": "Id", "Type": "int", "Nullable": false},
+      {"Name": "UserId", "Type": "int", "Nullable": false},
+      {"Name": "OrderDate", "Type": "DateTime", "Nullable": false},
+      {"Name": "TotalPrice", "Type": "double", "Nullable": false}
+    ]
+  },
+  {
+    "Name": "OrderItem",
+    "Properties": [
+      {"Name": "Id", "Type": "int", "Nullable": false},
+      {"Name": "OrderId", "Type": "int", "Nullable": false},
+      {"Name": "ProductId", "Type": "int", "Nullable": false},
+      {"Name": "Quantity", "Type": "int", "Nullable": false}
+    ]
+  },
+  {
+    "Name": "Category",
+    "Properties": [
+      {"Name": "Id", "Type": "int", "Nullable": false},
+      {"Name": "Name", "Type": "string", "Nullable": true}
+    ]
+  },
+  {
+    "Name": "Supplier",
+    "Properties": [
+      {"Name": "Id", "Type": "int", "Nullable": false},
+      {"Name": "Name", "Type": "string", "Nullable": true},
+      {"Name": "ContactName", "Type": "string", "Nullable": true},
+      {"Name": "ContactEmail", "Type": "string", "Nullable": true}
+    ]
+  },
+  {
+    "Name": "Inventory",
+    "Properties": [
+      {"Name": "Id", "Type": "int", "Nullable": false},
+      {"Name": "ProductId", "Type": "int", "Nullable": false},
+      {"Name": "Quantity", "Type": "int", "Nullable": false}
+    ]
+  },
+  {
+    "Name": "Employee",
+    "Properties": [
+      {"Name": "Id", "Type": "int", "Nullable": false},
+      {"Name": "FirstName", "Type": "string", "Nullable": true},
+      {"Name": "LastName", "Type": "string", "Nullable": true},
+      {"Name": "Position", "Type": "string", "Nullable": true}
+    ]
+  },
+  {
+    "Name": "Customer",
+    "Properties": [
+      {"Name": "Id", "Type": "int", "Nullable": false},
+      {"Name": "FirstName", "Type": "string", "Nullable": true},
+      {"Name": "LastName", "Type": "string", "Nullable": true},
+      {"Name": "Email", "Type": "string", "Nullable": true}
+    ]
+  },
+  {
+    "Name": "BlogPost",
+    "Properties": [
+      {"Name": "Id", "Type": "int", "Nullable": false},
+      {"Name": "Title", "Type": "string", "Nullable": true},
+      {"Name": "Content", "Type": "string", "Nullable": true},
+      {"Name": "DatePosted", "Type": "DateTime", "Nullable": false}
+    ]
+  },
+  {
+    "Name": "Comment",
+    "Properties": [
+      {"Name": "Id", "Type": "int", "Nullable": false},
+      {"Name": "Content", "Type": "string", "Nullable": true},
+      {"Name": "DatePosted", "Type": "DateTime", "Nullable": false},
+      {"Name": "BlogPostId", "Type": "int", "Nullable": false}
+    ]
+  },
+  {
+    "Name": "Cart",
+    "Properties": [
+      {"Name": "Id", "Type": "int", "Nullable": false},
+      {"Name": "UserId", "Type": "int", "Nullable": false}
+    ]
+  },
+  {
+    "Name": "CartItem",
+    "Properties": [
+      {"Name": "Id", "Type": "int", "Nullable": false},
+      {"Name": "CartId", "Type": "int", "Nullable": false},
+      {"Name": "ProductId", "Type": "int", "Nullable": false},
+      {"Name": "Quantity", "Type": "int", "Nullable": false}
+    ]
+  },
+  {
+    "Name": "Store",
+    "Properties": [
+      {"Name": "Id", "Type": "int", "Nullable": false},
+      {"Name": "Name", "Type": "string", "Nullable": true},
+      {"Name": "AddressId", "Type": "int", "Nullable": false}
+    ]
+  },
+  {
+    "Name": "Transaction",
+    "Properties": [
+      {"Name": "Id", "Type": "int", "Nullable": false},
+      {"Name": "Amount", "Type": "double", "Nullable": false},
+      {"Name": "TransactionDate", "Type": "DateTime", "Nullable": false},
+      {"Name": "UserId", "Type": "int", "Nullable": false}
+    ]
+  },
+  {
+    "Name": "Review",
+    "Properties": [
+      {"Name": "Id", "Type": "int", "Nullable": false},
+      {"Name": "ProductId", "Type": "int", "Nullable": false},
+      {"Name": "UserId", "Type": "int", "Nullable": false},
+      {"Name": "Content", "Type": "string", "Nullable": true},
+      {"Name": "Rating", "Type": "int", "Nullable": false}
+    ]
+  },
+  {
+    "Name": "Discount",
+    "Properties": [
+      {"Name": "Id", "Type": "int", "Nullable": false},
+      {"Name": "ProductId", "Type": "int", "Nullable": false},
+      {"Name": "Percentage", "Type": "double", "Nullable": false},
+      {"Name": "StartDate", "Type": "DateTime", "Nullable": false},
+      {"Name": "EndDate", "Type": "DateTime", "Nullable": false}
+    ]
+  },
+  {
+    "Name": "Wishlist",
+    "Properties": [
+      {"Name": "Id", "Type": "int", "Nullable": false},
+      {"Name": "UserId", "Type": "int", "Nullable": false}
+    ]
+  },
+  {
+    "Name": "WishlistItem",
+    "Properties": [
+      {"Name": "Id", "Type": "int", "Nullable": false},
+      {"Name": "WishlistId", "Type": "int", "Nullable": false},
+      {"Name": "ProductId", "Type": "int", "Nullable": false}
+    ]
+  },
+  {
+    "Name": "ShippingDetail",
+    "Properties": [
+      {"Name": "Id", "Type": "int", "Nullable": false},
+      {"Name": "OrderId", "Type": "int", "Nullable": false},
+      {"Name": "AddressId", "Type": "int", "Nullable": false},
+      {"Name": "EstimatedDelivery", "Type": "DateTime", "Nullable": false}
+    ]
+  },
+  {
+    "Name": "Invoice",
+    "Properties": [
+      {"Name": "Id", "Type": "int", "Nullable": false},
+      {"Name": "OrderId", "Type": "int", "Nullable": false},
+      {"Name": "InvoiceDate", "Type": "DateTime", "Nullable": false},
+      {"Name": "TotalAmount", "Type": "double", "Nullable": false}
+    ]
+  }
+]
